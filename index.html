@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Location Path 测试</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f5;
+    }
+
+    .path {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="path" id="path"></div>
+  <script>
+    document.getElementById('path').textContent = location.pathname;
+  </script>
+</body>
+
+</html>
